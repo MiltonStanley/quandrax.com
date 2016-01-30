@@ -1,0 +1,12 @@
+name: Quandrax 
+markdown: kramdown
+highligther: pygments
+timezone: America/Chicago
+exclude: ['Gemfile', 'Gemfile.lock', '*.sublime-*', 'lib','vendor', 'Rakefile', 's3_website.yml']
+relative_permalinks: false
+url: www.quandrax.com
+author: Milton Stanley
+gems:
+    - jekyll-feed
+sass:
+  style: compressed

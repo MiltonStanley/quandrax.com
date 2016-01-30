@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.3.0
+branches:
+  only: master
+script: bundle exec rake build
+cache: bundler
+deploy:
+  provider: s3
+  access_key_id: AKIAIE35NTBL6WPXE2FA
+  secret_access_key:
+    secure: Hq2UeRhNbzOOQv1TnX88BmqY0I5v++/LwnRFYxSJjU0QRYAm7HKo+Choe/VkuGWi2dMgFGUhckAXYOqKjVTRkDPO52Iu9tdykJuRiVnvtcP0ewK4ITOFvkk59bfVdEj8nh35gGyUQVz8bDoxwK4FVmsXNAUKH2DClW2H+kROOTzkRyFeNJxgmDWBvbJDpbIx9DGLlLNi3ck5MtxywXkfu/yENNpdeNNzrpFRMl+NbRIixv6rvpzUd+hLd9XlfjxdUMNBIlo2nJK+TKH+Jb3wH7shweuTnXewGHgK08+ivZTy101F1Bg+YNsk9BznThKOEfbPWBIDfOruPVlW9Y+GXR/DjpTGystyXJKlX8zBT3LhhQfTM2LBh4Y+Pzm2tShMMcXdvm3AXNhLs9TYXUYFlTl4AcWXo3h/8VtBTsQZ7J6rSqopLyXXW/RPydwsz2Xb5sHb7aZ1UfJ75AaBSErQutFbzf1IBmuw4qyKmvXK7yPUgbJK4GCRHgr9LEofgaIkgobAZk/3rmreAnS2KZ8nRaSxOTJiuK9Rm+DH4p6OnfoNIQRHX+hQwluI/cXIfAmqUcA84V5a3nBr4XKQ/CW8yIEZFJUaK/8iCYOcCr/LE6i0NBqYcvJs4AFzEqCMn8adWfHfnvmJN61CknFvtUIYEct2SQi/aAyZuBZCvm2u5XA=
+  bucket: quandrax.com
+  acl: bucket_owner_full_control
+  on:
+    repo: MiltonStanley/quandrax.com
