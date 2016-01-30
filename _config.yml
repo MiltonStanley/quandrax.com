@@ -10,3 +10,7 @@ gems:
     - jekyll-feed
 sass:
   style: compressed
+analytics :
+  provider : google 
+  google : 
+      tracking_id : 'UA-73054057-1'
